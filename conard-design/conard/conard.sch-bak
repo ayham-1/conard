@@ -1,0 +1,197 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 7350 7500 0    50   ~ 0
+Controller Schematic
+Text Notes 8100 7650 0    50   ~ 0
+10/30/20
+$Comp
+L MCU_Microchip_ATmega:ATmega328-P U?
+U 1 1 5F9D4211
+P 1700 2650
+F 0 "U?" H 1056 2696 50  0000 R CNN
+F 1 "ATmega328-P" H 1056 2605 50  0000 R CNN
+F 2 "Package_DIP:DIP-28_W7.62mm" H 1700 2650 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 1700 2650 50  0001 C CNN
+	1    1700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog:HXJ-35 U?
+U 1 1 5F9EFBD8
+P 3500 1000
+F 0 "U?" H 3558 1425 50  0000 C CNN
+F 1 "HXJ-35" H 3558 1334 50  0000 C CNN
+F 2 "" H 3500 1000 50  0001 C CNN
+F 3 "" H 3500 1000 50  0001 C CNN
+	1    3500 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog:HXJ-35 U?
+U 1 1 5F9F0430
+P 4700 1000
+F 0 "U?" H 4758 1425 50  0000 C CNN
+F 1 "HXJ-35" H 4758 1334 50  0000 C CNN
+F 2 "" H 4700 1000 50  0001 C CNN
+F 3 "" H 4700 1000 50  0001 C CNN
+	1    4700 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5F9F443D
+P 2600 650
+F 0 "#PWR?" H 2600 500 50  0001 C CNN
+F 1 "+5V" H 2615 823 50  0000 C CNN
+F 2 "" H 2600 650 50  0001 C CNN
+F 3 "" H 2600 650 50  0001 C CNN
+	1    2600 650 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 1150 1700 900 
+Wire Wire Line
+	1700 900  2600 900 
+Wire Wire Line
+	2600 900  2600 650 
+Wire Wire Line
+	3900 900  3950 900 
+Wire Wire Line
+	3950 900  3950 1450
+Wire Wire Line
+	3950 1450 3050 1450
+Wire Wire Line
+	3050 1450 3050 900 
+Wire Wire Line
+	3050 900  3000 900 
+Connection ~ 2600 900 
+Wire Wire Line
+	5100 900  5200 900 
+Wire Wire Line
+	5200 900  5200 1500
+Wire Wire Line
+	5200 1500 3000 1500
+Wire Wire Line
+	3000 1500 3000 900 
+Connection ~ 3000 900 
+Wire Wire Line
+	3000 900  2850 900 
+$Comp
+L power:GND #PWR?
+U 1 1 5F9FDD71
+P 2600 4500
+F 0 "#PWR?" H 2600 4250 50  0001 C CNN
+F 1 "GND" H 2605 4327 50  0000 C CNN
+F 2 "" H 2600 4500 50  0001 C CNN
+F 3 "" H 2600 4500 50  0001 C CNN
+	1    2600 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1700 4150 2600 4150
+Wire Wire Line
+	2600 4150 2600 4500
+Wire Wire Line
+	3900 800  4000 800 
+Wire Wire Line
+	4000 4150 2600 4150
+Connection ~ 2600 4150
+Wire Wire Line
+	5100 800  5250 800 
+Wire Wire Line
+	5250 800  5250 1550
+Wire Wire Line
+	5250 1550 4000 1550
+Wire Wire Line
+	4000 800  4000 1550
+Connection ~ 4000 1550
+Wire Wire Line
+	4000 1550 4000 4150
+Wire Wire Line
+	2300 2350 4050 2350
+Wire Wire Line
+	4050 2350 4050 1050
+Wire Wire Line
+	4050 1050 3900 1050
+Wire Wire Line
+	2300 2450 4100 2450
+Wire Wire Line
+	4100 2450 4100 1150
+Wire Wire Line
+	4100 1150 3900 1150
+Wire Wire Line
+	2300 2550 4150 2550
+Wire Wire Line
+	4150 2550 4150 1600
+Wire Wire Line
+	4150 1600 5300 1600
+Wire Wire Line
+	5300 1600 5300 1050
+Wire Wire Line
+	5300 1050 5100 1050
+Wire Wire Line
+	2300 2650 4200 2650
+Wire Wire Line
+	4200 2650 4200 1650
+Wire Wire Line
+	4200 1650 5350 1650
+Wire Wire Line
+	5350 1650 5350 1150
+Wire Wire Line
+	5350 1150 5100 1150
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 5FA0F49A
+P 2850 3100
+F 0 "SW?" V 2804 3230 50  0000 L CNN
+F 1 "SW_DIP_x01" V 2895 3230 50  0000 L CNN
+F 2 "" H 2850 3100 50  0001 C CNN
+F 3 "~" H 2850 3100 50  0001 C CNN
+	1    2850 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Switch:SW_DIP_x01 SW?
+U 1 1 5FA1332F
+P 3550 3100
+F 0 "SW?" V 3504 3230 50  0000 L CNN
+F 1 "SW_DIP_x01" V 3595 3230 50  0000 L CNN
+F 2 "" H 3550 3100 50  0001 C CNN
+F 3 "~" H 3550 3100 50  0001 C CNN
+	1    3550 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2850 2800 2850 2300
+Connection ~ 2850 900 
+Wire Wire Line
+	2850 900  2600 900 
+Wire Wire Line
+	3550 2800 3550 2300
+Wire Wire Line
+	3550 2300 2850 2300
+Connection ~ 2850 2300
+Wire Wire Line
+	2850 2300 2850 900 
+Wire Wire Line
+	2300 3850 2850 3850
+Wire Wire Line
+	2850 3850 2850 3400
+Wire Wire Line
+	2300 3750 3550 3750
+Wire Wire Line
+	3550 3750 3550 3400
+$EndSCHEMATC

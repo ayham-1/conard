@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name MCU_Microchip_ATmega)(type Legacy)(uri /home/dizzy/proj/kicad-symbols-master/MCU_Microchip_ATmega.lib)(options "")(descr ""))
+  (lib (name Connector)(type Legacy)(uri /home/dizzy/proj/kicad-symbols-master/Connector.lib)(options "")(descr ""))
+  (lib (name MCU_AnalogDevices)(type Legacy)(uri /home/dizzy/proj/kicad-symbols-master/MCU_AnalogDevices.lib)(options "")(descr ""))
+  (lib (name Analog)(type Legacy)(uri /home/dizzy/proj/kicad-symbols-master/Analog.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri /home/dizzy/proj/kicad-symbols-master/power.lib)(options "")(descr ""))
+  (lib (name Switch)(type Legacy)(uri /home/dizzy/proj/kicad-symbols-master/Switch.lib)(options "")(descr ""))
+)
